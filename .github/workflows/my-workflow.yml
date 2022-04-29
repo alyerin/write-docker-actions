@@ -1,1 +1,10 @@
 name:  Docker Actions workflow
+
+on: [push]
+
+jobs:
+  action:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
