@@ -6,7 +6,7 @@ cat_url = "https://cat-fact.herokuapp.com/facts"
 r = requests.get(cat_url)
 r_obj_list = r.json()
 
-fact_list = []
+fact_list = ["Cats are nutbars", "Cats can exist in five dimensions."]
 
 for fact in r_obj_list:
   fact_list.append(fact["text"])
